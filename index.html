@@ -421,7 +421,7 @@
             const dx = pos.x - lastPointer.x;
             const dy = pos.y - lastPointer.y;
 
-            const sensitivity = 0.003;
+            const sensitivity = 0.01;
             lon = startLon - dx * sensitivity;
             lat = startLat - dy * sensitivity;
             lat = Math.max(-maxLat, Math.min(maxLat, lat));
